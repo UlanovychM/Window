@@ -35,10 +35,12 @@ const modals = () => {
 		});
 
 		modal.addEventListener('click', e => {
+		
+
 			if (e.target === modal && closeClickOverlay) {
-				windows.forEach(item => {
-					item.style.display = 'none';
-				});
+					windows.forEach(item => {
+						item.style.display = 'none';
+					});
 				modal.style.display = 'none';
 				document.body.classList.remove('modal-open');
 			}
@@ -72,7 +74,7 @@ const modals = () => {
 		false
 	);
 
-	showModalByTime('.popup', 60000);
+	// showModalByTime('.popup', 60000);
 };
 
 export default modals;
