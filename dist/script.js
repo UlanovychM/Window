@@ -14227,6 +14227,9 @@ const images = () => {
   imgPopup.style.justifyContent = 'center';
   imgPopup.style.alignItems = 'center';
   imgPopup.style.display = 'none';
+  bigImage.style.maxHeight = '70%';
+  bigImage.style.maxWidth = '80%';
+  console.log(imgPopup.clientHeight);
   imgPopup.appendChild(bigImage);
   workStation.addEventListener('click', e => {
     e.preventDefault();
