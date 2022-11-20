@@ -20,7 +20,7 @@ body {
 
 .faded {
 	animation-name: faded;
-	animation: 1s;
+	animation-duration: 1s;
 }
 
 @keyframes faded {
